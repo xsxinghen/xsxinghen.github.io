@@ -1,0 +1,102 @@
+# Site settings
+title: xs星痕 | Blog
+SEOTitle: xs星痕 | Blog
+header-img: img/home-bg.jpg
+email: xsxinghen@gmail.com
+description: "这里是 xs星痕 的个人博客，与你一起发现更大的世界 "
+keyword: "博客, 个人网站, 互联网, Web"
+url: "https://blog.313579.xyz"          # 您的主机，用于绝对网址   
+baseurl: ""                             # 例如，如果您的博客托管在 'host/blog' 上，则使用 '/blog'
+                                         
+
+
+# SNS settings
+RSS: false
+#weibo_username:     xsxinghen
+#zhihu_username:     xsxinghen
+github_username:    xsxinghen
+#twitter_username:  xsxinghen
+#facebook_username:  xsxinghen
+#linkedin_username:  firstname-lastname-idxxxx
+
+
+# 构建设置
+# 从2016年起，GitHub Pages 不再支持 'pygments'。请改用 'rouge' 进行代码高亮。
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # 如果您想自定义锚点，请查看 `post.html` 的第 181 行
+
+
+
+# Gems
+# 来自 PR#40，支持 Jekyll 3.0 的本地预览
+
+plugins: [jekyll-paginate]
+
+
+
+
+# Markdown 设置
+# 将 redcarpet 替换为 kramdown，
+# 虽然 redcarpet 可以自动高亮代码，但缺乏标题 ID 导致无法生成目录，因此我切换到 kramdown
+# 文档：http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # 使用 GitHub 风格的 Markdown ！重要
+
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# # 多说设置
+duoshuo_username: xsxinghen blog
+# 分享组件依赖于评论功能，因此我们无法仅使用分享功能。
+duoshuo_share: true                     # 如果您希望在不分享的情况下使用评论功能，请将其设置为 false
+
+
+
+
+# Analytics settings  分析设置
+# Baidu Analytics  百度分析
+ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+# Google Analytics  Google分析
+ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_domain: huangxuan.me
+
+
+
+# Sidebar settings
+sidebar: true                            # 是否使用侧边栏。
+sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
+sidebar-avatar: /img/avatar-hux.jpg      # 使用绝对网址，因为它在 `/` 和 `/about/` 中都被使用
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用功能标签
+featured-condition-size: 1              # 如果标签的大小超过此条件值，则该标签将被突出显示
+
+
+
+# Friends
+friends: [
+    {
+        title: "Hux Blog",
+        href: "http://huangxuan.me"
+    },{
+        title: "Foo",
+        href: "#"
+    },{
+        title: "Bar",
+        href: "#"
+    },{
+        title: "Example Friends",
+        href: "#"
+    },{
+        title: "It helps SEO",
+        href: "#"
+    }
+]
