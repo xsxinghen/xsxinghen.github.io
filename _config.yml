@@ -37,6 +37,7 @@ plugins: [jekyll-paginate-v2]
 
 
 
+
 # Markdown 设置
 # 将 redcarpet 替换为 kramdown，
 # 虽然 redcarpet 可以自动高亮代码，但缺乏标题 ID 导致无法生成目录，因此我切换到 kramdown
