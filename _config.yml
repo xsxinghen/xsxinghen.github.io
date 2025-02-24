@@ -1,4 +1,4 @@
-# Site settings
+# 网站设置
 title: xs星痕 | Blog
 SEOTitle: xs星痕 | Blog
 header-img: img/home-bg-ndmz.jpg
@@ -10,7 +10,7 @@ baseurl: ""                             # 例如，如果您的博客托管在 '
                                          
 
 
-# SNS settings
+# 社交网络服务（SNS）设置
 RSS: false
 #weibo_username:     xsxinghen
 #zhihu_username:     xsxinghen
