@@ -1,7 +1,7 @@
 # Site settings
 title: xs星痕 | Blog
 SEOTitle: xs星痕 | Blog
-header-img: img/home-bg.jpg
+header-img: img/home-bg-ndmz.jpg
 email: xsxinghen@gmail.com
 description: "这里是 xs星痕 的个人博客，与你一起发现更大的世界 "
 keyword: "博客, 个人网站, 互联网, Web"
@@ -71,7 +71,7 @@ ga_domain: huangxuan.me
 # Sidebar settings
 sidebar: true                            # 是否使用侧边栏。
 sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/kuxuanji.png      # 使用绝对网址，因为它在 `/` 和 `/about/` 中都被使用
+sidebar-avatar: /img/avatar-kuxuanji.jpg      # 使用绝对网址，因为它在 `/` 和 `/about/` 中都被使用
 
 
 
