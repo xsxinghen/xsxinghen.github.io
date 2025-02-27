@@ -6,7 +6,7 @@ gem "jekyll-deploy"
 
 gem 'jekyll-paginate'
 
-gem "jekyll", "~> 4.0"
+gem "jekyll"
 gem "rake"
 
-gem "webrick", "~> 1.7"
+gem "webrick"
