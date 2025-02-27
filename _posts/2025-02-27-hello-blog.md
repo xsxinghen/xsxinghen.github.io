@@ -2,7 +2,7 @@
 layout:     post
 title:      "欢迎来到 xs星痕 的 Blog"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2025-02-26 10:00:00
+date:       2025-02-26 10:00:00 +0800
 author:     "xs星痕"
 header-img: "img/post-bg-2015.jpg"
 tags:
