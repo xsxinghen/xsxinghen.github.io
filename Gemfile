@@ -1,9 +1,7 @@
 source "https://rubygems.org"
 
-
-gem "jekyll-deploy"
-# 其他 gems...
-
+# Gemfile
+gem 'jekyll-deploy'
 gem 'jekyll-paginate'
 
 gem "jekyll"
