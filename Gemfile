@@ -1,10 +1,13 @@
 source "https://rubygems.org"
 
-# Gemfile
-gem 'jekyll-deploy'
+ruby "3.4.2"
+
+gem "jekyll-deploy"
+# 其他 gems...
+
 gem 'jekyll-paginate'
 
-gem "jekyll"
+gem "jekyll", "~> 4.0"
 gem "rake"
 
-gem "webrick"
+gem "webrick", "~> 1.7"
