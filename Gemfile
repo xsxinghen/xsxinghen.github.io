@@ -1,4 +1,9 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+
+
+gem "jekyll-deploy"
+# 其他 gems...
+
 gem 'jekyll-paginate'
 
 gem "jekyll", "~> 4.0"
