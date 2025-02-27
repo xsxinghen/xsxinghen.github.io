@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      "Welcome to Hux Blog"
+title:      "欢迎来到 xs星痕 的 Blog"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2015-01-29 12:00:00
-author:     "Hux"
+date:       2025-02-27 10:00:00
+author:     "xs星痕"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - 生活
@@ -14,11 +14,14 @@ tags:
 
 ## 前言
 
-Hux 的 Blog 就这么开通了。
+xs星痕 的 Blog 就这么开通了。
 
 [跳过废话，直接看技术实现 ](#build)
 
 
+这个 Blog 是由 Hux的[Github样板](/xsxinghen.github.io/README.zh.md) 复刻过来的。
+
+以下均为Hux的Blog发布的原内容：
 
 2015 年，Hux 总算有个地方可以好好写点东西了。
 
