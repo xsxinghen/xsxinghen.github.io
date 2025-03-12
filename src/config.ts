@@ -7,8 +7,8 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'xs星痕',
-  subtitle: 'Blog',
+  title: 'xs星痕 | Blog',
+  subtitle: '一个建立于21世纪的Blog，存活于互联网的边缘。',
   lang: 'zh_CN',         // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
   themeColor: {
     hue: 250,         // 主题色的默认色调，取值范围为 0 至 360。例如：红色为 0，蓝绿色为 200，青色为 250，粉色为 345
@@ -57,7 +57,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: 'https://avatars.githubusercontent.com/u/84395857?v=4',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'xs星痕',
-  bio: '一个建立于21世纪的Blog，存活于互联网的边缘.',
+  bio: '一个建立于21世纪的Blog，存活于互联网的边缘。',
   links: [
     // {
      // name: 'Twitter',
