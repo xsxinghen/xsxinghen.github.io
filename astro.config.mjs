@@ -20,7 +20,7 @@ import { remarkExcerpt } from "./src/plugins/remark-excerpt.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
 // https://astro.build/config
-export 默认 defineConfig({
+export default defineConfig({
   site: "https://blog.313579.xyz/",
   base: "/",
   trailingSlash: "always",
