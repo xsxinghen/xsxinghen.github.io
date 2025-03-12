@@ -20,45 +20,45 @@ import { remarkExcerpt } from "./src/plugins/remark-excerpt.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
 // https://astro.build/config
-export default defineConfig({
-  site: "https://fuwari.vercel.app/",
-  base: "/",
-  trailingSlash: "always",
+export 默认 defineConfig({
+  site: "https://xsxinghen.github.io/"，
+  base: "xsxinghen.github.io"，
+  trailingSlash: "always"，
   integrations: [
     tailwind(
         {
-          nesting: true,
+          nesting: true，
         }
-    ),
+    )，
     swup({
-      theme: false,
-      animationClass: "transition-swup-", // see https://swup.js.org/options/#animationselector
+      theme: false，
+      animationClass: "transition-swup-"， // see https://swup.js.org/options/#animationselector
       // the default value `transition-` cause transition delay
       // when the Tailwind class `transition-all` is used
-      containers: ["main", "#toc"],
-      smoothScrolling: true,
-      cache: true,
-      preload: true,
-      accessibility: true,
-      updateHead: true,
-      updateBodyClass: false,
-      globalInstance: true,
-    }),
+      containers: ["main"， "#toc"]，
+      smoothScrolling: true，
+      cache: true，
+      preload: true，
+      accessibility: true，
+      updateHead: true，
+      updateBodyClass: false，
+      globalInstance: true，
+    })，
     icon({
       include: {
-        "preprocess: vitePreprocess(),": ["*"],
-        "fa6-brands": ["*"],
-        "fa6-regular": ["*"],
-        "fa6-solid": ["*"],
-      },
-    }),
-    svelte(),
-    sitemap(),
+        "preprocess: vitePreprocess(),": ["*"]，
+        "fa6-brands": ["*"]，
+        "fa6-regular": ["*"]，
+        "fa6-solid": ["*"]，
+      }，
+    })，
+    svelte()，
+    sitemap()，
     Compress({
-      CSS: false,
-      Image: false,
+      CSS: false，
+      Image: false，
       Action: {
-        Passed: async () => true, // https://github.com/PlayForm/Compress/issues/376
+        Passed: async () => true， // https://github.com/PlayForm/Compress/issues/376
       },
     }),
   ],
