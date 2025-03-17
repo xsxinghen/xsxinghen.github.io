@@ -37,12 +37,16 @@
 title: My First Blog Post
 published: 2023-09-09
 description: This is the first post of my new Astro blog.
-image: ./cover.jpg
+image: ./cover.jpg  # 封面名称统一用cover命名，否则一直报错
 tags: [Foo, Bar]
 category: Front-end
 draft: false
 lang: jp      # 仅当文章语言与 `config.ts` 中的网站语言不同时需要设置
 ---
+
+插入图片
+![](./图片地址.jpg)  # 统一使用jpg格式的图片，bmp的用不了。
+
 ```
 
 ## 🧞 指令
