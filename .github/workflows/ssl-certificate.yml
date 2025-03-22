@@ -1,0 +1,25 @@
+name: Renew SSL Certificate
+ 
+on:
+  schedule:
+    - cron: '0 0 * * *' # 每天午夜运行
+  workflow_dispatch:
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    
+    - name: Install certbot and nginx
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y certbot python3-certbot-nginx
+        sudo certbot --nginx -d xsxinghen.tbit.top --non-interactive --agree-tos --redirect --hsts --staple-ocsp --email 171335350@qq.com
+    ```
