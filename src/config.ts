@@ -46,7 +46,7 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Home,
     LinkPreset.Archive,
     LinkPreset.About,
-    LinkPreset.Friends,
+    LinkPreset.Friends,       //src/pages添加文件 标题.astro ;src/types/config.ts里添加修改；src/constants/link-presets.ts修改翻译
     // {
     //  name: 'GitHub',
     //  url: 'https://github.com/saicaca/fuwari',     // 内部链接不应包含基础路径，因为它会自动添加
