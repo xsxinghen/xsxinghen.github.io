@@ -19,6 +19,18 @@ const postsCollection = defineCollection({
     nextSlug: z.string().default(''),
   }),
 })
+
+const friendsCollection = defineCollection({
+  type: 'data',
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    avatar: z.string(),
+    link: z.string().url(),
+  }),
+})
+
 export const collections = {
   posts: postsCollection,
+  friends: friendsCollection,
 }
