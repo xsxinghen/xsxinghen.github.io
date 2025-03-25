@@ -49,8 +49,8 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Friends,
     // {
     //  name: 'GitHub',
-    //  url: 'https://github.com/saicaca/fuwari',     // Internal links should not include the base path, as it is automatically added
-    //  external: true,                               // Show an external link icon and will open in a new tab
+    //  url: 'https://github.com/saicaca/fuwari',     // 内部链接不应包含基础路径，因为它会自动添加
+    //  external: true,                               // 显示一个外部链接图标，并将在新标签页中打开
     // },
   ],
 }
