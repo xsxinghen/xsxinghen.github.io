@@ -10,18 +10,18 @@ comments: true
 <ul class="grid grid-cols-3 gap-3 p-3">
   <!-- 朋友1 -->
   <li>
-    <a href="https://gyoza.lxchapu.com/" 
+    <a href="https://www.cloudflare-cn.com/" 
        target="_blank" 
        rel="noopener"
        class="flex items-center gap-3 p-2 hover:bg-gray-100 rounded transition">
-      <img src="https://s2.loli.net/2024/04/30/ozsnuS5Ihf3xMBG.webp" 
-           alt="Keigo" 
+      <img src="https://xsxinghen.github.io/jkfx/images/cloudflare.png" 
+           alt="Cloudflare" 
            width="48" 
            height="48" 
            class="w-10 h-10 rounded-full object-cover">
       <div class="text-left">
-        <div class="font-medium text-sm truncate">Gyoza</div>
-        <div class="text-xs text-gray-500 truncate">简洁，快速，可爱</div>
+        <div class="font-medium text-sm truncate">Cloudflare</div>
+        <div class="text-xs text-gray-500 truncate">为“无处不在的世界”打造的云</div>
       </div>
     </a>
   </li>
