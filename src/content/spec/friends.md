@@ -26,7 +26,24 @@ comments: true
     </a>
   </li>
   
-  <!-- 朋友2 -->
+  
+  <li>
+    <a href="https://www.spaceship.com/" 
+       target="_blank" 
+       rel="noopener"
+       class="flex items-center gap-3 p-2 hover:bg-gray-100 rounded transition">
+      <img src="https://spaceship-cdn.com/static/spaceship/favicon/spaceship-favicon.ico" 
+           alt="spaceship" 
+           width="48" 
+           height="48" 
+           class="w-10 h-10 rounded-full object-cover">
+      <div class="text-left">
+        <div class="font-medium text-sm truncate">spaceship</div>
+        <div class="text-xs text-gray-500 truncate">由全球第二大国外域名注册商和顶<br>级网络服务提供商Namecheap推出。</div>
+      </div>
+    </a>
+  </li>
+
   <li>
     <a href="https://docs.astro.build/en/getting-started/" 
        target="_blank" 
@@ -40,24 +57,6 @@ comments: true
       <div class="text-left">
         <div class="font-medium text-sm truncate">Astro文档</div>
         <div class="text-xs text-gray-500 truncate">Astro 入门指南</div>
-      </div>
-    </a>
-  </li>
-  
-  <!-- 朋友3 -->
-  <li>
-    <a href="https://www.lxchapu.com" 
-       target="_blank" 
-       rel="noopener"
-       class="flex items-center gap-3 p-2 hover:bg-gray-100 rounded transition">
-      <img src="https://s2.loli.net/2024/04/23/tIxXmT45RbBDWH8.webp" 
-           alt="柃夏" 
-           width="48" 
-           height="48" 
-           class="w-10 h-10 rounded-full object-cover">
-      <div class="text-left">
-        <div class="font-medium text-sm truncate">柃夏</div>
-        <div class="text-xs text-gray-500 truncate">生活明朗，万物可爱</div>
       </div>
     </a>
   </li>
