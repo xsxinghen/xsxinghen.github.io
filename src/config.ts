@@ -60,18 +60,6 @@ export const profileConfig: ProfileConfig = {
   name: 'xs星痕',
   bio: '一个建立于21世纪的Blog，存活于互联网的边缘。',
   links: [
-    // {
-     // name: 'Twitter',
-     // icon: 'fa6-brands:twitter',       // Visit https://icones.js.org/collection/fa6-brands for icon codes
-                                        // 如果相应的图标集尚未包含在内，你需要进行安装 。
-                                        // `pnpm add @iconify-json/<icon-set-name>`
-     // url: 'https://twitter.com',
-     // },
-    // {
-      // name: 'Steam',
-      // icon: 'fa6-brands:steam',
-      // url: 'https://store.steampowered.com',
-    // },
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
@@ -83,6 +71,11 @@ export const profileConfig: ProfileConfig = {
       url: 'mailto:xsxinghen@gmail.com',
     }
   ],
+  
+    // Visit https://icones.js.org/collection/fa6-brands for icon codes
+    // 如果相应的图标集尚未包含在内，你需要进行安装 。
+    // `pnpm add @iconify-json/<icon-set-name>`
+
 }
 
 export const licenseConfig: LicenseConfig = {
