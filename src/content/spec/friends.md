@@ -39,7 +39,7 @@ comments: true
            class="w-10 h-10 rounded-full object-cover">
       <div class="text-left">
         <div class="font-medium text-sm truncate">spaceship</div>
-        <div class="text-xs text-gray-500 truncate">由全球第二大国外域名注册商和顶<br>级网络服务提供商Namecheap推出。</div>
+        <div class="text-xs text-gray-500 truncate">由全球第二大国外域名注册商和顶<br>级网络服务提供商Namecheap推出</div>
       </div>
     </a>
   </li>
