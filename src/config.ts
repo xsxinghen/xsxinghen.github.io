@@ -80,7 +80,7 @@ export const profileConfig: ProfileConfig = {
     {
       name: 'E-Mail',
       icon: 'material-symbols:mail-rounded',
-      url: 'xsxinghen@gmail.com',
+      url: 'mailto:xsxinghen@gmail.com',
     }
   ],
 }
