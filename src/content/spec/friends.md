@@ -60,4 +60,23 @@ comments: true
       </div>
     </a>
   </li>
+
+  <li>
+    <a href="/jkfx/" 
+       target="_blank" 
+       rel="noopener"
+       class="flex items-center gap-3 p-2 hover:bg-gray-100 rounded transition">
+      <img src="https://xsxinghen.github.io/jkfx/images/liuxing.png" 
+           alt="TVBox接口" 
+           width="48" 
+           height="48" 
+           class="w-10 h-10 rounded-full object-cover">
+      <div class="text-left">
+        <div class="font-medium text-sm truncate">TVBox接口</div>
+        <div class="text-xs text-gray-500 truncate">接口分享</div>
+      </div>
+    </a>
+  </li>
+
+
 </ul>
