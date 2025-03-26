@@ -63,9 +63,6 @@ export default defineConfig({
       },
     }),
   ],
-  vite: {
-    plugins: [yaml()],
-  },
   markdown: {
     remarkPlugins: [
       remarkMath,
@@ -130,7 +127,9 @@ export default defineConfig({
           }
           warn(warning);
         },
+        plugins: [yaml()],
       },
     },
+    
   },
 });

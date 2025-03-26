@@ -20,17 +20,16 @@ const postsCollection = defineCollection({
   }),
 })
 
-const friendsCollection = defineCollection({
-  type: 'data',
+const friends = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    avatar: z.string(),
     link: z.string().url(),
-  }),
-})
+    avatar: z.string().optional()
+  })
+});
 
 export const collections = {
   posts: postsCollection,
-  friends: friendsCollection,
+  friends,
 }
