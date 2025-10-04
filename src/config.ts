@@ -13,21 +13,21 @@ export const siteConfig: SiteConfig = {
 	lang: "zh_CN", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
 		hue: 250, // 主题色的默认色调，取值范围为 0 至 360。例如：红色为 0，蓝绿色为 200，青色为 250，粉色为 345
-		fixed: false, // Hide the theme color picker for visitors
+		fixed: false, // 对访客隐藏主题颜色选择器
 	},
 	banner: {
-		enable: false,
-		src: "assets/images/demo-banner.png", // 相对于 /src 目录。如果以 / 开头，则相对于 /public 目录
-		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+		enable: false,  // 顶部图片 true = 启用 false =不启用
+		src: "./assets/images/richu.jpg", // 相对于 /src 目录。如果以 / 开头，则相对于 /public 目录。以'./'或不添加，则相对于 /src 目录
+		position: "center", // 相当于 object-position，仅支持 'top'、'center'、'bottom'。默认为 'center'。
 		credit: {
-			enable: false, // Display the credit text of the banner image
-			text: "", // Credit text to be displayed
-			url: "", // (Optional) URL link to the original artwork or artist's page
+			enable: false, // 显示横幅图片的版权信息。
+			text: "", // 要显示的版权文字
+			url: "", // （可选）指向原始艺术作品或艺术家页面的 URL 链接
 		},
 	},
 	toc: {
-		enable: true, // Display the table of contents on the right side of the post
-		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
+		enable: true, // 在文章右侧显示目录
+		depth: 2, // 目录中显示的最大标题深度，从 1 到 3
 	},
 	favicon: [
 		{
@@ -63,7 +63,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "./assets/images/avatar-kuxuanji.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录。
+	avatar: "assets/images/avatar-kuxuanji.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录。以'./'或不添加，则相对于 /src 目录
 	name: "xs星痕",
 	bio: "一个建立于21世纪的Blog，存活于互联网的边缘。",
 	links: [
@@ -91,7 +91,7 @@ export const licenseConfig: LicenseConfig = {
 };
 
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
-	// Note: Some styles (such as background color) are being overridden, see the astro.config.mjs file.
-	// Please select a dark theme, as this blog theme currently only supports dark background color
+// 注意：某些样式（如背景颜色）已被覆盖，请查看 astro.config.mjs 文件。
+// 请选择深色主题，因为此博客主题目前仅支持深色背景颜色
 	theme: "github-dark",
 };
