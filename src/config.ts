@@ -53,16 +53,17 @@ export const navBarConfig: NavBarConfig = {
 		//2.src/types/config.ts里添加修改 ==> export enum LinkPreset 下修改；
 		//3.src/constants/link-presets.ts修改翻译
 		//4.src/i18n/i18nKey.ts 添加
-		//{
-		//	name: "GitHub",
-		//	url: "https://github.com/saicaca/fuwari", // Internal links should not include the base path, as it is automatically added
-		//	external: true, // Show an external link icon and will open in a new tab
-		//},
+
+   		// {
+    	//  name: 'GitHub',
+    	//  url: 'https://github.com/xsxinghen/xsxinghen.github.io',     // 内部链接不应包含基础路径，因为它会自动添加
+    	//  external: true,                               // 显示一个外部链接图标，并将在新标签页中打开
+    	// },
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://avatars.githubusercontent.com/u/84395857?v=4", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "./assets/images/avatar-kuxuanji.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录。
 	name: "xs星痕",
 	bio: "一个建立于21世纪的Blog，存活于互联网的边缘。",
 	links: [
