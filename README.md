@@ -2,7 +2,7 @@
 
 基于 [Astro](https://astro.build) 开发的静态博客模板。
 
-项目原地址：[https://github.com/saicaca/fuwari](https://github.com/saicaca/fuwari)
+Fuwari主题地址：[https://github.com/saicaca/fuwari](https://github.com/saicaca/fuwari)
 
 [**🖥️在线预览（Vercel）**](https://fuwari.vercel.app)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
 [**📦旧 Hexo 版本**](https://github.com/saicaca/hexo-theme-vivia)
@@ -27,15 +27,15 @@
 1. 使用此模板[生成新仓库](https://github.com/saicaca/fuwari/generate)或 Fork 此仓库
 2. 进行本地开发，Clone 新的仓库，执行 `pnpm install` 和 `pnpm add sharp` 以安装依赖  
    - 若未安装 [pnpm](https://pnpm.io)，执行 `npm install -g pnpm`
-   - 完成后运行服务 `npm run dev`
+   - 完成后运行服务 `pnpm dev` 或 `npm run dev`
 3. 通过配置文件 `src/config.ts` 自定义博客
 4. 执行 `pnpm new-post <filename>` 创建新文章，并在 `src/content/posts/` 目录中编辑
 5. 参考[官方指南](https://docs.astro.build/zh-cn/guides/deploy/)将博客部署至 Vercel, Netlify, GitHub Pages 等；部署前需编辑 `astro.config.mjs` 中的站点设置。
 6. 导航栏添加菜单
-   1. src/pages添加文件 标题.astro 可以复制about.astro;
-   2. src/types/config.ts里添加修改 ==> export enum LinkPreset 下修改；
-   3. src/constants/link-presets.ts修改翻译
-   4. src/i18n/i18nKey.ts 添加
+   - src/pages添加文件 标题.astro 可以复制about.astro;
+   - src/types/config.ts里添加修改 ==> export enum LinkPreset 下修改；
+   - src/constants/link-presets.ts修改翻译
+   - src/i18n/i18nKey.ts 添加
 
 ## ⚙️ 文章 Frontmatter
 
