@@ -5,266 +5,75 @@ comments: true
 ---
 # 朋友们
 > 我的小伙伴们和一些有趣的站点。
+<ul class="grid grid-cols-3 gap-3 p-3">
+  <!-- 朋友1 -->
+  <li>
+    <a href="https://www.cloudflare-cn.com/" 
+       target="_blank" 
+       rel="noopener"
+       class="flex items-center gap-3 p-2 hover:bg-gray-100 rounded transition">
+      <img src="https://xsxinghen.github.io/jkfx/images/cloudflare.png" 
+           alt="Cloudflare" 
+           width="48" 
+           height="48" 
+           class="w-10 h-10 rounded-full object-cover">
+      <div class="text-left">
+        <div class="font-medium text-sm truncate">Cloudflare</div>
+        <div class="text-xs text-gray-400 truncate">为“无处不在的世界”打造的云</div>
+      </div>
+    </a>
+  </li>
+  
+  
+  <li>
+    <a href="https://www.spaceship.com/" 
+       target="_blank" 
+       rel="noopener"
+       class="flex items-center gap-3 p-2 hover:bg-gray-100 rounded transition">
+      <img src="https://spaceship-cdn.com/static/spaceship/favicon/spaceship-favicon.ico" 
+           alt="spaceship" 
+           width="48" 
+           height="48" 
+           class="w-10 h-10 rounded-full object-cover">
+      <div class="text-left">
+        <div class="font-medium text-sm truncate">spaceship</div>
+        <div class="text-xs text-gray-400 truncate">由全球第二大国外域名注册商和顶<br>级网络服务提供商Namecheap推出</div>
+      </div>
+    </a>
+  </li>
 
-<div class="friends-grid" style="
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    margin: 20px 0;
-">
-    <!-- Cloudflare -->
-    <div class="friend-card" style="
-        background: white;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-        border: 1px solid #e2e8f0;
-    ">
-        <a href="https://www.cloudflare-cn.com/" 
-           target="_blank" 
-           rel="noopener"
-           style="
-                display: flex;
-                align-items: center;
-                padding: 16px;
-                text-decoration: none;
-                color: inherit;
-                height: 100%;
-           ">
-            <img src="https://xsxinghen.github.io/jkfx/images/cloudflare.png" 
-                 alt="Cloudflare" 
-                 style="
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                    flex-shrink: 0;
-                    margin-right: 16px;
-                    background-color: #f1f5f9;
-                 ">
-            <div style="flex: 1; min-width: 0;">
-                <div style="
-                    font-weight: 600;
-                    font-size: 1rem;
-                    color: #1e293b;
-                    margin-bottom: 4px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                ">Cloudflare</div>
-                <div style="
-                    font-size: 0.875rem;
-                    color: #64748b;
-                    line-height: 1.4;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                ">为"无处不在的世界"打造的云服务</div>
-            </div>
-        </a>
-    </div>
-    
-    <!-- Spaceship -->
-    <div class="friend-card" style="
-        background: white;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-        border: 1px solid #e2e8f0;
-    ">
-        <a href="https://www.spaceship.com/" 
-           target="_blank" 
-           rel="noopener"
-           style="
-                display: flex;
-                align-items: center;
-                padding: 16px;
-                text-decoration: none;
-                color: inherit;
-                height: 100%;
-           ">
-            <img src="https://spaceship-cdn.com/static/spaceship/favicon/spaceship-favicon.ico" 
-                 alt="Spaceship" 
-                 style="
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                    flex-shrink: 0;
-                    margin-right: 16px;
-                    background-color: #f1f5f9;
-                 ">
-            <div style="flex: 1; min-width: 0;">
-                <div style="
-                    font-weight: 600;
-                    font-size: 1rem;
-                    color: #1e293b;
-                    margin-bottom: 4px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                ">Spaceship</div>
-                <div style="
-                    font-size: 0.875rem;
-                    color: #64748b;
-                    line-height: 1.4;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                ">由全球第二大域名注册商Namecheap推出的网络服务平台</div>
-            </div>
-        </a>
-    </div>
-    
-    <!-- Astro文档 -->
-    <div class="friend-card" style="
-        background: white;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-        border: 1px solid #e2e8f0;
-    ">
-        <a href="https://docs.astro.build/en/getting-started/" 
-           target="_blank" 
-           rel="noopener"
-           style="
-                display: flex;
-                align-items: center;
-                padding: 16px;
-                text-decoration: none;
-                color: inherit;
-                height: 100%;
-           ">
-            <img src="https://s2.loli.net/2023/12/13/YbKirkO21CtdvMD.png" 
-                 alt="Astro文档" 
-                 style="
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                    flex-shrink: 0;
-                    margin-right: 16px;
-                    background-color: #f1f5f9;
-                 ">
-            <div style="flex: 1; min-width: 0;">
-                <div style="
-                    font-weight: 600;
-                    font-size: 1rem;
-                    color: #1e293b;
-                    margin-bottom: 4px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                ">Astro文档</div>
-                <div style="
-                    font-size: 0.875rem;
-                    color: #64748b;
-                    line-height: 1.4;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                ">Astro框架的入门指南和完整文档</div>
-            </div>
-        </a>
-    </div>
-    
-    <!-- TVBox接口 -->
-    <div class="friend-card" style="
-        background: white;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-        border: 1px solid #e2e8f0;
-    ">
-        <a href="/jkfx/" 
-           target="_blank" 
-           rel="noopener"
-           style="
-                display: flex;
-                align-items: center;
-                padding: 16px;
-                text-decoration: none;
-                color: inherit;
-                height: 100%;
-           ">
-            <img src="https://xsxinghen.github.io/jkfx/images/liuxing.png" 
-                 alt="TVBox接口" 
-                 style="
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                    flex-shrink: 0;
-                    margin-right: 16px;
-                    background-color: #f1f5f9;
-                 ">
-            <div style="flex: 1; min-width: 0;">
-                <div style="
-                    font-weight: 600;
-                    font-size: 1rem;
-                    color: #1e293b;
-                    margin-bottom: 4px;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                ">TVBox接口</div>
-                <div style="
-                    font-size: 0.875rem;
-                    color: #64748b;
-                    line-height: 1.4;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                ">TVBox播放器接口资源分享</div>
-            </div>
-        </a>
-    </div>
-</div>
+  <li>
+    <a href="https://docs.astro.build/en/getting-started/" 
+       target="_blank" 
+       rel="noopener"
+       class="flex items-center gap-3 p-2 hover:bg-gray-100 rounded transition">
+      <img src="https://s2.loli.net/2023/12/13/YbKirkO21CtdvMD.png" 
+           alt="Astro文档" 
+           width="48" 
+           height="48" 
+           class="w-10 h-10 rounded-full object-cover">
+      <div class="text-left">
+        <div class="font-medium text-sm truncate">Astro文档</div>
+        <div class="text-xs text-gray-400 truncate">Astro 入门指南</div>
+      </div>
+    </a>
+  </li>
 
-<style>
-@media (max-width: 992px) {
-    .friends-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-}
+  <li>
+    <a href="/jkfx/" 
+       target="_blank" 
+       rel="noopener"
+       class="flex items-center gap-3 p-2 hover:bg-gray-100 rounded transition">
+      <img src="https://xsxinghen.github.io/jkfx/images/liuxing.png" 
+           alt="TVBox接口" 
+           width="48" 
+           height="48" 
+           class="w-10 h-10 rounded-full object-cover">
+      <div class="text-left">
+        <div class="font-medium text-sm truncate">TVBox接口</div>
+        <div class="text-xs text-gray-400 truncate">接口分享</div>
+      </div>
+    </a>
+  </li>
 
-@media (max-width: 768px) {
-    .friends-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 12px !important;
-    }
-    
-    .friend-card {
-        border-radius: 10px !important;
-    }
-    
-    .friend-card img {
-        width: 44px !important;
-        height: 44px !important;
-        margin-right: 12px !important;
-    }
-    
-    .friend-card a {
-        padding: 14px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .friends-grid {
-        grid-template-columns: 1fr !important;
-    }
-}
-
-.friend-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
-}
-</style>
+</ul>
