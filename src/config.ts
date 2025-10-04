@@ -12,12 +12,12 @@ export const siteConfig: SiteConfig = {
 	subtitle: "一个建立于21世纪的Blog，存活于互联网的边缘。",
 	lang: "zh_CN", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
-		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
+		hue: 250, // 主题色的默认色调，取值范围为 0 至 360。例如：红色为 0，蓝绿色为 200，青色为 250，粉色为 345
 		fixed: false, // Hide the theme color picker for visitors
 	},
 	banner: {
 		enable: false,
-		src: "assets/images/demo-banner.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "assets/images/demo-banner.png", // 相对于 /src 目录。如果以 / 开头，则相对于 /public 目录
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: false, // Display the credit text of the banner image
@@ -30,6 +30,9 @@ export const siteConfig: SiteConfig = {
 		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
 	},
 	favicon: [
+		{
+      src:'/favicon/favicon.ico',
+    	}
 		// Leave this array empty to use the default favicon
 		// {
 		//   src: '/favicon/icon.png',    // Path of the favicon, relative to the /public directory
