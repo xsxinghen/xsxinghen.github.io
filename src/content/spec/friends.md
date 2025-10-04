@@ -5,7 +5,7 @@ comments: true
 ---
 # 朋友们
 > 我的小伙伴们和一些有趣的站点。
-<ul class="grid grid-cols-3 gap-3 p-3">
+<ul class="grid grid-cols-2 gap-3 p-3">
   <!-- 朋友1 -->
   <li>
     <a href="https://www.cloudflare-cn.com/" 
