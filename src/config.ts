@@ -43,7 +43,13 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
+		LinkPreset.Friends,
 		LinkPreset.About,
+		//导航栏添加菜单
+		//1.src/pages添加文件 标题.astro 可以复制about.astro;
+		//2.src/types/config.ts里添加修改 ==> export enum LinkPreset 下修改；
+		//3.src/constants/link-presets.ts修改翻译
+		//4.src/i18n/i18nKey.ts 添加
 		//{
 		//	name: "GitHub",
 		//	url: "https://github.com/saicaca/fuwari", // Internal links should not include the base path, as it is automatically added
