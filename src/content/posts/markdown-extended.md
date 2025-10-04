@@ -82,3 +82,14 @@ This is a note with a custom title.
 > [!TIP]
 > The GitHub syntax is also supported.
 ```
+
+### Spoiler
+
+您可以在文本中添加 Spoiler。该文本还支持 Markdown 语法。
+
+The content :spoiler[is hidden **ayyy**]!
+
+```markdown
+The content :spoiler[is hidden **ayyy**]!
+
+```
