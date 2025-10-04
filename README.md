@@ -1,7 +1,9 @@
 # 🍥Fuwari
 
-基于 [Astro](https://astro.build) 开发的静态博客模板。&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+基于 [Astro](https://astro.build) 开发的静态博客模板。
+
 项目原地址：[https://github.com/saicaca/fuwari](https://github.com/saicaca/fuwari)
+
 [**🖥️在线预览（Vercel）**](https://fuwari.vercel.app)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
 [**📦旧 Hexo 版本**](https://github.com/saicaca/hexo-theme-vivia)
 
