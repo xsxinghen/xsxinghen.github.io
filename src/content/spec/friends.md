@@ -6,47 +6,14 @@ comments: true
 # 朋友们
 > 我的小伙伴们和一些有趣的站点。
 
-
-<!DOCTYPE html>
-<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朋友链接</title>
+    <title>友情链接</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-        
-        body {
-            background-color: #f8fafc;
-            color: #334155;
-            padding: 20px;
-            line-height: 1.5;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .header h1 {
-            font-size: 2rem;
-            color: #1e293b;
-            margin-bottom: 10px;
-        }
-        
-        .header p {
-            color: #64748b;
-            font-size: 1.1rem;
+        .friends-container {
+            max-width: 100%;
+            margin: 20px 0;
         }
         
         .friends-grid {
@@ -90,7 +57,7 @@ comments: true
         
         .friend-info {
             flex: 1;
-            min-width: 0; /* 确保文本截断生效 */
+            min-width: 0;
         }
         
         .friend-name {
@@ -113,14 +80,18 @@ comments: true
             overflow: hidden;
         }
         
-        /* 移动端适配 */
-        @media (max-width: 768px) {
+        /* 平板设备 */
+        @media (max-width: 992px) {
             .friends-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
-            .header h1 {
-                font-size: 1.75rem;
+        }
+        
+        /* 手机设备 */
+        @media (max-width: 768px) {
+            .friends-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
             }
             
             .friend-card {
@@ -132,38 +103,22 @@ comments: true
                 height: 44px;
                 margin-right: 12px;
             }
-        }
-        
-        @media (max-width: 480px) {
-            .friends-grid {
-                grid-template-columns: 1fr;
-                gap: 12px;
-            }
-            
-            .header h1 {
-                font-size: 1.5rem;
-            }
             
             .friend-link {
                 padding: 14px;
             }
         }
         
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #94a3b8;
-            font-size: 0.875rem;
+        /* 小屏手机 */
+        @media (max-width: 480px) {
+            .friends-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>友情链接</h1>
-            <p>发现更多优质网站和资源</p>
-        </div>
-        
+    <div class="friends-container">
         <ul class="friends-grid">
             <!-- Cloudflare -->
             <li class="friend-card">
@@ -229,10 +184,5 @@ comments: true
                 </a>
             </li>
         </ul>
-        
-        <div class="footer">
-            <p>© 2023 友情链接 | 持续更新中</p>
-        </div>
     </div>
 </body>
-</html>
