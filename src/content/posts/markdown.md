@@ -1,52 +1,47 @@
 ---
-title: Markdown Example
+title: Markdown 示例
 published: 2023-10-01
-description: A simple example of a Markdown blog post.
-tags: [Markdown, Blogging, Demo]
-category: Examples
+description: 一篇Markdown博客文章的简单示例。
+tags: [Markdown, Blog, 演示]
+category: 示例
 draft: false
 ---
 
-# An h1 header
+# h1 标题
 
-Paragraphs are separated by a blank line.
+段落之间由空行分隔。
 
-2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists
-look like:
+第二段。 _斜体_, **粗体**, and `monospace`. 项目符号列表看起来像:
 
-- this one
-- that one
-- the other one
+- 这一条
+- 那一个
+- 另一个
 
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
+请注意——不考虑星号——实际文本内容从第 4 列开始
 
-> Block quotes are
-> written like so.
+> 区块引用
+> 是这样写的。
 >
-> They can span multiple paragraphs,
-> if you like.
+> 它们可以跨越多个段落,
+> 如果您喜欢的话.
 
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
+使用 3 个短横线表示破折号。使用 2 个短横线表示范围 (ex., "it's all
+in chapters 12--14"). 三个点 ... 将被转换为省略号。支持 Unicode ☺
 
-## An h2 header
+## h2 标题
 
-Here's a numbered list:
+以下是一个编号列表:
 
-1. first item
-2. second item
-3. third item
+1. 第一项
+2. 第二项
+3. 第三项
 
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
+注意再次，实际文本从第 4 列开始（从左侧起 4 个字符）。这里是一个代码示例:
 
     # Let me re-iterate ...
     for i in 1 .. 10 { do-something(i) }
 
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
+您可能已经猜到了，缩进 4 个空格。顺便说一句，如果您喜欢，可以用分隔块代替缩进块:
 
 ```
 define foobar() {
@@ -54,8 +49,7 @@ define foobar() {
 }
 ```
 
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
+（这使得复制粘贴更容易）。您可以选择为分隔的块标记语法高亮:
 
 ```python
 import time
@@ -66,20 +60,19 @@ for i in range(10):
     print i
 ```
 
-### An h3 header
+### h3 标题
 
-Now a nested list:
+现在是一个嵌套列表:
 
-1. First, get these ingredients:
+1. 首先，准备以下食材:
 
     - carrots
     - celery
     - lentils
 
-2. Boil some water.
+2. 烧一些水.
 
-3. Dump everything in the pot and follow
-    this algorithm:
+3. 将所有东西倒入锅中，按照以下算法进行:
 
         find wooden spoon
         uncover pot
@@ -89,76 +82,16 @@ Now a nested list:
         wait 10 minutes
         goto first step (or shut off burner when done)
 
-    Do not bump wooden spoon or it will fall.
+    不要碰木勺，否则它会掉下来
 
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
+注意文本总是对齐在 4 个空格缩进上（包括那条继续上面第 3 项的最后一行）.
 
-Here's a link to [a website](http://foo.bar), to a [local
-doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
+这里有一个 [网站链接](http://foo.bar), 一个 [本地文档链接](local-doc.html), 以及当前文档中的一个 [部分标题链接](#an-h2-header). 部分标题链接 [^1].
 
-[^1]: Footnote text goes here.
+[^1]: 脚注文本在此处.
 
-Tables can look like this:
 
-size material color
-
----
-
-9 leather brown
-10 hemp canvas natural
-11 glass transparent
-
-Table: Shoes, their sizes, and what they're made of
-
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
-
----
-
-keyword text
-
----
-
-red Sunsets, apples, and
-other red or reddish
-things.
-
-green Leaves, grass, frogs
-and other things it's
-not easy being.
-
----
-
-A horizontal rule follows.
-
----
-
-Here's a definition list:
-
-apples
-: Good for making applesauce.
-oranges
-: Citrus!
-tomatoes
-: There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)
-
-Here's a "line block":
-
-| Line one
-| Line too
-| Line tree
-
-and images can be specified like so:
-
-[//]: # (![example image]&#40;./demo-banner.png "An exemplary image"&#41;)
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
+内联数学公式可以这样输入: $\omega = d\phi / dt$. 显示数学公式应单独占一行，并用双美元符号括起来:
 
 $$I = \int \rho R^{2} dV$$
 
@@ -171,5 +104,4 @@ $$
 \end{equation*}
 $$
 
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
+请注意，您可以转义任何您希望按字面显示的标点符号，例如.: \`foo\`, \*bar\*, etc.
