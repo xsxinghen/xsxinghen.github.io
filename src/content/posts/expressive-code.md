@@ -3,7 +3,7 @@ title: 富有表现力的代码示例
 published: 2024-04-10
 description: 使用 Expressive Code 在 Markdown 中的代码块样式。
 tags: [Markdown, Blog, 示例]
-category: Examples
+category: 示例
 draft: false
 ---
 
