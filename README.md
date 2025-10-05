@@ -58,8 +58,9 @@ title: My First Blog Post   #标题
 published: 2023-09-09      #日期
 description: This is the first post of my new Astro blog.      #文章简概
 image: ./cover.jpg  # 封面名称最好统一用cover命名，否则可能会报错
-tags: [Foo, Bar]     #标签
+pinned : false # 置顶功能 false = 不置顶 true = 置顶
 category: Front-end     # 分类
+tags: [Foo, Bar]     #标签
 draft: false      # 草稿状态：false = 不是草稿，主页显示文章 ；true = 是草稿，主页不显示文章
 lang: zh_CN      # 仅当文章语言与 `config.ts` 中的网站语言不同时需要设置
 ---
