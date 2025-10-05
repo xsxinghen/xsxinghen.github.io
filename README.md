@@ -44,9 +44,9 @@ Fuwari主题地址：[https://github.com/saicaca/fuwari](https://github.com/saic
 可按照
 [https://github.com/afoim/fuwari/](https://github.com/afoim/fuwari/)进行配置
 7. 寻找
-'''
+```
 <head>...</head>
-'''
+```
 ：src => layouts => Layout.astro <=在此文件下
 
 
