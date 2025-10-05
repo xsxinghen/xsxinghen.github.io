@@ -1,25 +1,47 @@
 ---
 
-import { getEntry, render } from "astro:content";
-import Markdown from "@components/misc/Markdown.astro";
-import I18nKey from "../i18n/i18nKey";
-import { i18n } from "../i18n/translation";
+
 import MainGridLayout from "../layouts/MainGridLayout.astro";
+import { Icon } from "astro-icon/components";
 
-const friendsPost = await getEntry("spec", "friends");
-
-if (!friendsPost) {
-	throw new Error("Friends page content not found");
-}
-
-const { Content } = await render(friendsPost);
 ---
-<MainGridLayout title={i18n(I18nKey.friends)} description={i18n(I18nKey.friends)}>
-    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
-        <div class="card-base z-10 px-9 py-6 relative w-full ">
-            <Markdown class="mt-2">
-                <Content />
-            </Markdown>
+
+<MainGridLayout title="友链">
+    <div class="card-base p-6 md:p-8">
+        <div class="flex items-center gap-2 mb-6">
+            <div class="h-8 w-8 rounded-lg bg-[var(--primary)] flex items-center justify-center text-white dark:text-black/70">
+                <Icon name="material-symbols:diversity-3" class="text-[1.5rem]"/>
+            </div>
+            <h1 class="text-2xl font-bold text-black dark:text-white">友链</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <a href="https://www.cloudflare.com/" target="_blank" class="friend-card">
+                <div class="flex items-center gap-2">
+                    <img src="https://xsxinghen.github.io/jkfx/images/cloudflare.png" alt="Secbit" class="w-5 h-5 rounded"/>
+                    <div class="font-bold text-black dark:text-white">CloudFlare</div>
+                </div>
+                <div class="text-sm text-black/50 dark:text-white/50">为“无处不在的世界”打造的云</div>
+            </a>
+            <a href="https://www.spaceship.com/" target="_blank" class="friend-card">
+                <div class="flex items-center gap-2">
+                    <img src="https://spaceship-cdn.com/static/spaceship/favicon/spaceship-favicon.ico" alt="Phira" class="w-5 h-5 rounded"/>
+                    <div class="font-bold text-black dark:text-white">Spaceship</div>
+                </div>
+                <div class="text-sm text-black/50 dark:text-white/50">由全球第二大国外域名注册商和顶级网络服务提供商Namecheap推出</div>
+            </a>
+            <a href="https://docs.astro.build/en/getting-started/" target="_blank" class="friend-card">
+                <div class="flex items-center gap-2">
+                    <img src="https://s2.loli.net/2023/12/13/YbKirkO21CtdvMD.png" alt="Phira" class="w-5 h-5 rounded"/>
+                    <div class="font-bold text-black dark:text-white">Astro文档</div>
+                </div>
+                <div class="text-sm text-black/50 dark:text-white/50">Astro 入门指南（基本没啥大用……）</div>
+            </a>
         </div>
     </div>
 </MainGridLayout>
+
+<style>
+.friend-card {
+    @apply flex flex-col gap-1 p-4 rounded-lg bg-[var(--card-bg)] hover:bg-black/5 dark:hover:bg-white/5 transition;
+}
+</style>

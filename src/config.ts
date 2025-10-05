@@ -47,8 +47,13 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
-		LinkPreset.Friends,
+		// LinkPreset.Friends,
 		LinkPreset.About,
+		{
+	 	name: '友链',
+		url:'/friends/',
+		external: false, 
+		}
 		// {
 	 	// name: '统计',
 		// url:'https://cloud.umami.is/share/2QjfC9Zt1IAxCF0T',
@@ -63,7 +68,7 @@ export const navBarConfig: NavBarConfig = {
    		// {
     	//  name: 'GitHub',
     	//  url: 'https://github.com/xsxinghen/xsxinghen.github.io',     // 内部链接不应包含基础路径，因为它会自动添加
-    	//  external: true,                               // 显示一个外部链接图标，并将在新标签页中打开
+    	//  external: true,                               // true = 开新页 ，false = 本页打开   显示一个外部链接图标，并将在新标签页中打开
     	// },
 	],
 };
