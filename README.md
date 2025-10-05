@@ -43,7 +43,7 @@ Fuwari主题地址：[https://github.com/saicaca/fuwari](https://github.com/saic
    - src/pages添加文件 标题.astro
 可按照
 [https://github.com/afoim/fuwari/](https://github.com/afoim/fuwari/)进行配置
-7. 寻找<head>...</head> ：src => layouts => Layout.astro <=在此文件下
+7. 寻找'''<head>...</head> '''：src => layouts => Layout.astro <=在此文件下
 
 
 ## ⚙️ 文章 Frontmatter
