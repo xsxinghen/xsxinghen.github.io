@@ -9,7 +9,7 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "xs星痕 | Blog",
+	title: "炫世星痕 | Blog",
 	subtitle: "一个建立于21世纪的Blog，存活于互联网的边缘。",
 	lang: "zh_CN", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
@@ -70,7 +70,7 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar-kuxuanji.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录。以'./'或不添加，则相对于 /src 目录
-	name: "xs星痕",
+	name: "炫世星痕",
 	bio: "一个建立于21世纪的Blog，存活于互联网的边缘。",
 	links: [
 	{
