@@ -56,7 +56,7 @@ export const navBarConfig: NavBarConfig = {
 		// 其它里暂时不知道放啥
 		// {
 	 	// name: '其它',
-		// url:'/qt/',
+		// url:'/donate/',
 		// external: false, 
 		// },
 		// {
