@@ -32,12 +32,17 @@ Fuwari主题地址：[https://github.com/saicaca/fuwari](https://github.com/saic
 4. 执行 `pnpm new-post <filename>` 创建新文章，并在 `src/content/posts/` 目录中编辑
 5. 参考[官方指南](https://docs.astro.build/zh-cn/guides/deploy/)将博客部署至 Vercel, Netlify, GitHub Pages 等；部署前需编辑 `astro.config.mjs` 中的站点设置。
 6. 导航栏添加菜单
-   - src/pages添加文件 标题.astro 可以复制about.astro;
+   方法一：
+   - src/pages添加文件 标题.astro 内容可以复制about.astro，且将about改为标题名;
    - src/types/config.ts里添加修改 ==> export enum LinkPreset 下修改；
    - src/constants/link-presets.ts修改翻译
    - src/i18n/i18nKey.ts 添加
+   方法二
+   - src/pages添加文件 标题.astro
+可按照
+[https://github.com/afoim/fuwari/](https://github.com/afoim/fuwari/)进行配置
 7. 寻找<head>...</head> ：src => layouts => Layout.astro <=在此文件下
-8. 导航栏添加，都可以按照友链的格式来弄，也可以参考[https://github.com/afoim/fuwari/](https://github.com/afoim/fuwari/)进行配置
+
 
 ## ⚙️ 文章 Frontmatter
 
