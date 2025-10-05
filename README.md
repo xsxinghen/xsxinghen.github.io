@@ -37,6 +37,7 @@ Fuwari主题地址：[https://github.com/saicaca/fuwari](https://github.com/saic
    - src/constants/link-presets.ts修改翻译
    - src/i18n/i18nKey.ts 添加
 7. 寻找<head>...</head> ：src => layouts => Layout.astro <=在此文件下
+8. 导航栏添加，都可以按照友链的格式来弄，也可以参考[https://github.com/afoim/fuwari/](https://github.com/afoim/fuwari/)进行配置
 
 ## ⚙️ 文章 Frontmatter
 
