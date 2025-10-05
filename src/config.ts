@@ -49,11 +49,11 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.Friends,
 		LinkPreset.About,
-		{
-	 	 name: '统计',
-		 url:'https://cloud.umami.is/share/2QjfC9Zt1IAxCF0T',
-		 external: true, 
-		}
+		// {
+	 	// name: '统计',
+		// url:'https://cloud.umami.is/share/2QjfC9Zt1IAxCF0T',
+		// external: true, 
+		// }
 		//导航栏添加菜单
 		//1.src/pages添加文件 标题.astro 可以复制about.astro;
 		//2.src/types/config.ts里添加修改 ==> export enum LinkPreset 下修改；
