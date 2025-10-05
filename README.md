@@ -36,6 +36,7 @@ Fuwari主题地址：[https://github.com/saicaca/fuwari](https://github.com/saic
    - src/types/config.ts里添加修改 ==> export enum LinkPreset 下修改；
    - src/constants/link-presets.ts修改翻译
    - src/i18n/i18nKey.ts 添加
+7. 寻找<head>...</head> ：src => layouts => Layout.astro <=在此文件下
 
 ## ⚙️ 文章 Frontmatter
 
