@@ -49,6 +49,11 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.Friends,
 		LinkPreset.About,
+		{
+	 	name: '测试',
+		url:'/cs/',
+		external: true, 
+		}
 		// {
 	 	// name: '统计',
 		// url:'https://cloud.umami.is/share/2QjfC9Zt1IAxCF0T',
