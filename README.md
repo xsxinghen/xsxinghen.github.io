@@ -2,7 +2,7 @@
 
 基于 [Astro](https://astro.build) 开发的静态博客模板。
 
-Fuwari主题地址：[https://github.com/saicaca/fuwari](https://github.com/saicaca/fuwari)
+Fuwari主题源地址：[saicaca/fuwari](https://github.com/saicaca/fuwari)
 
 [**🖥️在线预览（Vercel）**](https://fuwari.vercel.app)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
 [**📦旧 Hexo 版本**](https://github.com/saicaca/hexo-theme-vivia)
@@ -42,7 +42,7 @@ Fuwari主题地址：[https://github.com/saicaca/fuwari](https://github.com/saic
 方法二：
    - src/pages添加文件 标题.astro
 可按照
-[https://github.com/afoim/fuwari/](https://github.com/afoim/fuwari/)进行配置
+[afoim/fuwari/](https://github.com/afoim/fuwari/)进行配置
 7. 寻找
 ```
 <head>...</head>
