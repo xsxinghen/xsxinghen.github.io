@@ -4,7 +4,7 @@
 
 Fuwari主题源地址：[saicaca/fuwari](https://github.com/saicaca/fuwari)
 
-[**🖥️在线预览（Vercel）**](https://fuwari.vercel.app)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+[**🖥️在线预览（Vercel）**](https://fuwari.vercel.app)&nbsp;&nbsp;&nbsp;
 
 > README 版本：`2024-09-10`
 
