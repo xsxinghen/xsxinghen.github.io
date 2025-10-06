@@ -6,8 +6,6 @@ Fuwari主题源地址：[saicaca/fuwari](https://github.com/saicaca/fuwari)
 
 [**🖥️在线预览（Vercel）**](https://fuwari.vercel.app)&nbsp;&nbsp;&nbsp;
 
-> README 版本：`2024-09-10`
-
 ![Preview Image](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png)
 
 ## ✨ 功能特性
