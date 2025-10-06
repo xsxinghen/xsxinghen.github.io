@@ -12,14 +12,16 @@ Fuwari主题源地址：[saicaca/fuwari](https://github.com/saicaca/fuwari)
 
 ## ✨ 功能特性
 
-- [x] 基于 Astro 和 Tailwind CSS 开发
-- [x] 流畅的动画和页面过渡
-- [x] 亮色 / 暗色模式
-- [x] 自定义主题色和横幅图片
+- [x] 使用 [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com)
+- [x] 平滑的动画和页面过渡
+- [x] 浅色/深色模式
+- [x] 可定制的主题颜色和横幅
 - [x] 响应式设计
-- [ ] 评论
-- [x] 搜索
-- [ ] 文内目录
+- [x]  [Pagefind](https://pagefind.app/)的搜索功能
+- [x] [Markdown 扩展功能](https://github.com/saicaca/fuwari?tab=readme-ov-file#-markdown-extended-syntax)
+- [x] 目录
+- [x] RSS 提要
+
 
 ## 🚀 使用方法
 
