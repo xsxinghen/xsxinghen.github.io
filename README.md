@@ -2,7 +2,7 @@
 
 基于 [Astro](https://astro.build) 开发的静态博客模板。
 
-Fuwari主题源地址：[saicaca/fuwari](https://github.com/saicaca/fuwari)
+Fuwari主题源仓地址：[saicaca/fuwari](https://github.com/saicaca/fuwari)
 
 [**🖥️在线预览（Vercel）**](https://fuwari.vercel.app)&nbsp;&nbsp;&nbsp;
 
