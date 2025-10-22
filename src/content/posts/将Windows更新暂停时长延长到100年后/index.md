@@ -3,6 +3,7 @@ title: 将Windows更新暂停时长延长到100年后
 published: 2025-03-17
 description: 通过修改注册表的方式来延长系统更新暂停时长.
 image: './cover.jpg'
+pinned: true
 tags: [Windows更新, 教程]
 category: '教程'
 draft: false 
