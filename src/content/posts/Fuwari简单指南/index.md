@@ -4,7 +4,7 @@ published: 2024-04-01
 description: "如何使用这个博客模板。"
 image: "./cover.jpeg"
 tags: ["Fuwari", "Blog", "定制"]
-category: 示例
+pinned: true
 draft: false
 ---
 
@@ -21,7 +21,7 @@ published: 2023-09-09
 description: This is the first post of my new Astro blog.
 image: ./cover.jpg
 tags: [Foo, Bar]
-category: Front-end
+pinned: false
 draft: false
 ---
 ```
@@ -33,8 +33,8 @@ draft: false
 | `description` | 简短描述，显示在索引页上。                                                                                                                                                   |
 | `image`       | 帖子的封面图片路径。以“http://”或“https://”开头：使用网络图片以“/”开头：用于“public”（公共）目录中的图片无前缀：相对于markdown（标记语言）文件（的路径）。 |
 | `tags`        | 帖子的标签。                                                                                                                                                                                       |
-| `category`    | 帖子的分类。                                                                                                                                                                                   |
-| `draft`        | 如果这篇帖子仍是草稿，就不会显示。                                                                                                                                                    |
+| `pinned`      | 帖子置顶。                                                                                                                                                                                   |
+| `draft`       | 如果这篇帖子仍是草稿，就不会显示。                                                                                                                                                    |
 
 ## 放置帖子文件的位置
 
