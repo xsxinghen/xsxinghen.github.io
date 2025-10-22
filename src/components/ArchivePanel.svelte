@@ -6,12 +6,10 @@ import { i18n } from "../i18n/translation";
 import { getPostUrlBySlug } from "../utils/url-utils";
 
 export let tags: string[];
-export let categories: string[];
 export let sortedPosts: Post[] = [];
 
 const params = new URLSearchParams(window.location.search);
 tags = params.has("tag") ? params.getAll("tag") : [];
-categories = params.has("category") ? params.getAll("category") : [];
 const uncategorized = params.get("uncategorized");
 
 interface Post {
@@ -19,7 +17,6 @@ interface Post {
 	data: {
 		title: string;
 		tags: string[];
-		category?: string;
 		published: Date;
 	};
 }
@@ -49,12 +46,6 @@ onMount(async () => {
 			(post) =>
 				Array.isArray(post.data.tags) &&
 				post.data.tags.some((tag) => tags.includes(tag)),
-		);
-	}
-
-	if (categories.length > 0) {
-		filteredPosts = filteredPosts.filter(
-			(post) => post.data.category && categories.includes(post.data.category),
 		);
 	}
 
