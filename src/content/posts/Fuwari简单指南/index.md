@@ -16,12 +16,12 @@ draft: false
 
 ```yaml
 ---
-title: My First Blog Post
+title: 我的第一篇博客文章
 published: 2023-09-09
-description: This is the first post of my new Astro blog.
+description: 这是我新的astro博客的第一篇文章。
 image: ./cover.jpg
 tags: [Foo, Bar]
-category: Front-end
+pinned: false
 draft: false
 ---
 ```
@@ -33,7 +33,7 @@ draft: false
 | `description` | 简短描述，显示在索引页上。                                                                                                                                                   |
 | `image`       | 帖子的封面图片路径。以“http://”或“https://”开头：使用网络图片以“/”开头：用于“public”（公共）目录中的图片无前缀：相对于markdown（标记语言）文件（的路径）。 |
 | `tags`        | 帖子的标签。                                                                                                                                                                                       |
-| `category`    | 帖子的分类。                                                                                                                                                                                   |
+| `pinned`    | 帖子的置顶。                                                                                                                                                                                   |
 | `draft`        | 如果这篇帖子仍是草稿，就不会显示。                                                                                                                                                    |
 
 ## 放置帖子文件的位置
