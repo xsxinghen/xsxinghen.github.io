@@ -53,12 +53,6 @@ export const navBarConfig: NavBarConfig = {
 		url:'/friends/',
 		external: false, 
 		},
-		// 其它里暂时不知道放啥
-		// {
-	 	// name: '其它',
-		// url:'/donate/',
-		// external: false, 
-		// },
 		// {
 	 	// name: '统计',
 		// url:'https://cloud.umami.is/share/2QjfC9Zt1IAxCF0T',
