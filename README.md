@@ -4,7 +4,7 @@
 
 Fuwari主题来自：[saicaca/fuwari](https://github.com/saicaca/fuwari)
 
-[**🖥️在线预览（Vercel）**](https://fuwari.vercel.app)&nbsp;&nbsp;&nbsp;
+[**🖥️在线预览（Vercel）**](https://fuwari.vercel.app)&nbsp;&nbsp;&nbsp;[**🖥️在线预览2**](https://fuwari.xsxh.qzz.io)
 
 ![Preview Image](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png)
 
