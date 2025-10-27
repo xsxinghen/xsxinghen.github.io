@@ -19,6 +19,7 @@ Fuwari主题源仓地址：[saicaca/fuwari](https://github.com/saicaca/fuwari)
 - [x] [Markdown 扩展功能](https://github.com/saicaca/fuwari?tab=readme-ov-file#-markdown-extended-syntax)
 - [x] 目录
 - [x] RSS 提要
+- [x] 添加置顶功能，删除分类功能
 
 
 ## 🚀 使用方法
