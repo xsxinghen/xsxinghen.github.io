@@ -1,5 +1,5 @@
 # 关于
-本站主题 [Fuwari](https://github.com/saicaca/fuwari).
+本站主题来自 [Fuwari](https://github.com/saicaca/fuwari).
 
 ::github{repo="saicaca/fuwari"}
 
