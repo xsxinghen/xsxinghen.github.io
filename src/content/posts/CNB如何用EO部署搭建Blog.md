@@ -1,14 +1,13 @@
 ---
 title: CNB如何用EO部署搭建Blog
 published: 2025-11-20
-description: '如何利用CNB简单快捷的在O上部署搭建Blog'
+description: '如何利用CNB简单快捷的在EO上部署搭建Blog'
 image: ''
 tags: [CNB, Blog, EO, Edgeone]
 pinned: true
 draft: false 
 ---
-## 如何将cnb仓库搭建好的Blog部署到edgeone或edgeone国际版
-CNB是腾讯旗下的代码仓库平台，也是继 gitee，gitcode 之后又一个为中文开发者生态提供基础设施的平台，同GitHub Pages一样，CNB也可以托管静态网页。
+[CNB](https://cnb.cool/)是腾讯旗下的代码仓库平台，也是继 gitee，gitcode 之后又一个为中文开发者生态提供基础设施的平台，同GitHub Pages一样，CNB也可以托管静态网页。
 
 废话不多说，教程开始。
 
