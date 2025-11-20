@@ -34,7 +34,7 @@ EDGEONE_API_TOKEN: 填写自己在EO的创建的API TOKEN
 main:
   push:
       # 从私有仓库导入环境变量：
-      # 参考：https://docs.cnb.cool/en/build/env.html#importing-environment-variables
+      # 参考：https://docs.cnb.cool/en/build/env.html#importing-environment-variables  
       - imports: {这里填之前创建的 envs.yml Raw的地址}
       stages:
         # 构建当前项目
@@ -48,4 +48,6 @@ main:
           image: node:20
           script: npx edgeone pages deploy ./dist/ -n {这里填你的仓库名} -t $EDGEONE_API_TOKEN
 ```
-:::题外话：自定义域名如果是托管在CF的话是要关闭小黄云的，不然无法解析。:::
+:::
+题外话：自定义域名如果是托管在CF的话是要关闭小黄云的，不然无法解析。
+:::
