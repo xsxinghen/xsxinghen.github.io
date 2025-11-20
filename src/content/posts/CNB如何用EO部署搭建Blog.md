@@ -8,11 +8,14 @@ pinned: true
 draft: false 
 ---
 ## 如何将cnb仓库搭建好的Blog部署到edgeone或edgeone国际版
-CNB腾讯旗下的代码仓库平台，也是继 gitee，gitcode 之后又一个欲为中文开发者生态提供基础设施的平台，同GitHub Pages一样，CNB也可以托管静态网页。
+CNB是腾讯旗下的代码仓库平台，也是继 gitee，gitcode 之后又一个为中文开发者生态提供基础设施的平台，同GitHub Pages一样，CNB也可以托管静态网页。
+
 废话不多说，教程开始。
-:::note 
-注意第二步！注意第二步！！注意第二步！！！
+
+:::caution    
+注意第二步！注意第二步！！注意第二步！！！  
 :::
+
 > 一、 先在EO点击创建项目=>直接上传，项目名称同仓库名
 
 > 二、 ［！！！注意！！！］加速区域别忘记更改为：【全球可用区（不含中国大陆）】！！！『域名备案过的可无视这条』
@@ -37,12 +40,12 @@ main:
         # 构建当前项目
         - name: Build Current Project
           image: node:20
-          script: node -v && npm install && npm run build
+          script: node -v && npm install && npm run build  
         # 将构建输出部署到 EdgeOne Pages
         # ./dist 目录由前一步构建步骤生成
-        # 参考：https://www.npmjs.com/package/edgeone
+        # 参考：https://www.npmjs.com/package/edgeone  
         - name: Deploy to EdgeOne Pages
           image: node:20
           script: npx edgeone pages deploy ./dist/ -n {这里填你的仓库名} -t $EDGEONE_API_TOKEN
 ```
-题外话：自定义域名如果是托管在CF的话是要关闭小黄云的，不然无法解析。
+:::题外话：自定义域名如果是托管在CF的话是要关闭小黄云的，不然无法解析。:::
