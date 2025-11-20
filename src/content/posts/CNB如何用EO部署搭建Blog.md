@@ -12,7 +12,7 @@ CNB是腾讯旗下的代码仓库平台，也是继 gitee，gitcode 之后又一
 
 废话不多说，教程开始。
 
-:::caution    
+:::caution[注意！！！]  
 注意第二步！注意第二步！！注意第二步！！！  
 :::
 
@@ -48,6 +48,6 @@ main:
           image: node:20
           script: npx edgeone pages deploy ./dist/ -n {这里填你的仓库名} -t $EDGEONE_API_TOKEN
 ```
-:::
-题外话：自定义域名如果是托管在CF的话是要关闭小黄云的，不然无法解析。
+:::tip[题外话]
+自定义域名如果是托管在CF的话是要关闭小黄云的，不然无法解析。
 :::
