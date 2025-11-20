@@ -8,7 +8,7 @@ pinned: true
 draft: false 
 ---
 ## 如何将cnb仓库搭建好的Blog部署到edgeone或edgeone国际版
-
+CNB腾讯旗下的代码仓库平台，也是继 gitee，gitcode 之后又一个欲为中文开发者生态提供基础设施的平台，同GitHub Pages一样，CNB也可以托管静态网页。
 废话不多说，教程开始。
 :::note 
 注意第二步！注意第二步！！注意第二步！！！
