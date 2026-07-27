@@ -9,7 +9,7 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "星痕的防失联站点",
+	title: "星痕的防失联站",
 	subtitle: "一个建立于21世纪的Blog，存活于互联网的边缘。",
 	lang: "zh_CN", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
