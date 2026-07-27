@@ -4,9 +4,9 @@ published: 2026-07-27
 description: 'Blog的最新地址，防止失联，主站：5xh.top
 。'
 image: ''
-tags: []
+tags: [blog]
 pinned: true
-draft: false
+draft: true
 ---
 
 # 可用地址列表：
