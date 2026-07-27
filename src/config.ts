@@ -53,12 +53,11 @@ export const navBarConfig: NavBarConfig = {
 	//	url:'/friends/',
 	//	external: false, 
 	//	},
-                {
-                name: '分享站',
-                url: '/fx',
-                external: true,
-				icon: "fa7-solid:share-nodes"
-                },
+        //      {
+        //      name: '分享站',
+        //      url: '/fx',
+        //      external: true,
+        //      },
 		// 其它里暂时不知道放啥
 		// {
 	 	// name: '其它',
