@@ -9,7 +9,7 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "星痕的Blog",
+	title: "星痕的防失联站点",
 	subtitle: "一个建立于21世纪的Blog，存活于互联网的边缘。",
 	lang: "zh_CN", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
@@ -54,9 +54,10 @@ export const navBarConfig: NavBarConfig = {
 	//	external: false, 
 	//	},
                 {
-                name: '分享',
+                name: '分享站',
                 url: '/fx',
                 external: true,
+				icon: "fa7-solid:share-nodes"
                 },
 		// 其它里暂时不知道放啥
 		// {
