@@ -1,0 +1,54 @@
+---
+
+
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import { Icon } from "astro-icon/components";
+
+---
+
+<MainGridLayout title="友链">
+    <div class="card-base p-6 md:p-8">
+        <div class="flex items-center gap-2 mb-6">
+            <div class="h-8 w-8 rounded-lg bg-[var(--primary)] flex items-center justify-center text-white dark:text-black/70">
+                <Icon name="material-symbols:diversity-3" class="text-[1.5rem]"/>
+            </div>
+            <h1 class="text-2xl font-bold text-black dark:text-white">友链</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <a href="https://www.cloudflare.com/" target="_blank" class="friend-card">
+                <div class="flex items-center gap-2">
+                    <img src="https://ts2.tc.mm.bing.net/th/id/ODL.758a9ad5f7ec7b92d4f253ce81d38506?w=40&h=40&c=10&r=0&o=6&cb=B&pid=23.1" alt="Secbit" class="w-5 h-5 rounded"/>
+                    <div class="font-bold text-black dark:text-white">CloudFlare</div>
+                </div>
+                <div class="text-sm text-black/50 dark:text-white/50">为“无处不在的世界”打造的云</div>
+            </a>
+            <a href="https://www.spaceship.com/" target="_blank" class="friend-card">
+                <div class="flex items-center gap-2">
+                    <img src="https://spaceship-cdn.com/static/spaceship/favicon/spaceship-favicon.ico" alt="Phira" class="w-5 h-5 rounded"/>
+                    <div class="font-bold text-black dark:text-white">Spaceship</div>
+                </div>
+                <div class="text-sm text-black/50 dark:text-white/50">由全球第二大国外域名注册商和顶级网络服务提供商Namecheap推出</div>
+            </a>
+            <a href="https://docs.astro.build/en/getting-started/" target="_blank" class="friend-card">
+                <div class="flex items-center gap-2">
+                    <img src="https://ts1.tc.mm.bing.net/th/id/ODF.07_CwCK0Lp630bSvGWsLiQ?w=32&h=32&qlt=91&pcl=fffffa&o=6&pid=1.2" alt="Phira" class="w-5 h-5 rounded"/>
+                    <div class="font-bold text-black dark:text-white">Astro文档</div>
+                </div>
+                <div class="text-sm text-black/50 dark:text-white/50">Astro 入门指南（基本没啥大用……）</div>
+            </a>
+            <a href="https://pwdns.org" target="_blank" class="friend-card">
+                <div class="flex items-center gap-2">
+                    <img src="https://raw.githubusercontent.com/xsxinghen/fx/refs/heads/main/assets/img/IMG_20251120_082441.png" alt="Phira" class="w-5 h-5 rounded"/>
+                    <div class="font-bold text-black dark:text-white">公益域名之家</div>
+                </div>
+                <div class="text-sm text-black/50 dark:text-white/50">一个公益性质的二级域名分发平台，致力于为用户提供免费的二级域名服务</div>
+            </a>
+        </div>
+    </div>
+</MainGridLayout>
+
+<style>
+.friend-card {
+    @apply flex flex-col gap-1 p-4 rounded-lg bg-[var(--card-bg)] hover:bg-black/5 dark:hover:bg-white/5 transition;
+}
+</style>
