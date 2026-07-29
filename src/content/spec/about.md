@@ -16,4 +16,4 @@ Blog防失联地址列表：
 [blog.5xh.top](https://blog.5xh.top/)（部署于Vercel）
 
 ## 5、备用③
-[5xh.zh.kg](https://blog-3q4821z.maozi.io/)（部署于帽子云）
+[5xh.zh.kg](https://5xh.zh.kg/)（部署于帽子云）
