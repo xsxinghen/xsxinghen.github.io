@@ -17,3 +17,4 @@ Blog防失联地址列表：
 
 ## 5、备用③
 [5xh.zh.kg](https://5xh.zh.kg/)（部署于帽子云）
+[5xh.co.ink](https://5xh.co.ink/)（部署于帽子云）
