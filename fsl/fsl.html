@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>防失联 · 博客地址列表</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f2f6fa;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 820px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(4px);
+      border-radius: 2.8rem;
+      box-shadow: 0 25px 45px -14px rgba(0, 20, 30, 0.18);
+      padding: 2.2rem 2rem 2rem 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      transition: all 0.2s ease;
+    }
+
+    /* header */
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 0.25rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #0b1e2e;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .badge-auto {
+      background: #b8d4e8;
+      padding: 0.2rem 1rem;
+      border-radius: 60px;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      color: #103f53;
+      text-transform: uppercase;
+      margin-left: 0.3rem;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .subhead {
+      color: #2b556b;
+      font-weight: 400;
+      font-size: 0.9rem;
+      background: #e4eef7;
+      padding: 0.15rem 1.2rem;
+      border-radius: 60px;
+      display: inline-block;
+      margin-top: 0.2rem;
+      border-left: 3px solid #7aa5b9;
+    }
+
+    .desc {
+      margin: 1rem 0 1.6rem 0;
+      color: #1f3b4a;
+      font-weight: 400;
+      font-size: 0.95rem;
+      background: #ebf3fa;
+      padding: 0.4rem 1.6rem;
+      border-radius: 60px;
+      display: inline-block;
+      letter-spacing: 0.2px;
+    }
+
+    /* 站点卡片 grid */
+    .site-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .site-card {
+      background: white;
+      border-radius: 1.8rem;
+      padding: 1rem 1.6rem 1rem 1.8rem;
+      box-shadow: 0 3px 10px rgba(0, 20, 30, 0.03);
+      border: 1px solid #e5edf4;
+      transition: all 0.15s ease;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.4rem 0.8rem;
+    }
+
+    .site-card:hover {
+      border-color: #b6d2e3;
+      background: #fafdff;
+      box-shadow: 0 6px 16px -8px rgba(30, 60, 80, 0.08);
+      transform: translateY(-1px);
+    }
+
+    .site-left {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.3rem 0.7rem;
+      flex: 1 1 50%;
+    }
+
+    .site-label {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #103544;
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+    .site-label .num {
+      background: #dce6f0;
+      border-radius: 40px;
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 0.05rem 0.65rem;
+      color: #1a4b60;
+      margin-right: 0.1rem;
+    }
+
+    .site-domain {
+      font-size: 1rem;
+      font-weight: 500;
+      background: #ecf3f9;
+      padding: 0.05rem 1rem;
+      border-radius: 60px;
+      color: #005073;
+      word-break: break-all;
+    }
+
+    .site-domain a {
+      text-decoration: none;
+      color: #005073;
+      border-bottom: 1px dotted rgba(0, 80, 115, 0.25);
+    }
+
+    .site-domain a:hover {
+      color: #002b3b;
+      border-bottom: 1px solid #005073;
+    }
+
+    .site-deploy {
+      font-size: 0.7rem;
+      background: #e2eef7;
+      padding: 0.1rem 1rem;
+      border-radius: 60px;
+      color: #1f4d61;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      white-space: nowrap;
+      font-weight: 450;
+    }
+
+    .right-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.3rem 0.8rem;
+    }
+
+    /* 延迟结果样式 — 简洁优雅 */
+    .latency-badge {
+      font-size: 0.7rem;
+      font-weight: 500;
+      background: #eaf1f8;
+      padding: 0.15rem 0.9rem;
+      border-radius: 60px;
+      color: #1a4d63;
+      min-width: 60px;
+      text-align: center;
+      transition: 0.15s;
+      letter-spacing: 0.2px;
+    }
+
+    .latency-badge.ok {
+      background: #d9ecdd;
+      color: #1a6b3c;
+    }
+
+    .latency-badge.mid {
+      background: #f5efcf;
+      color: #7a6a1a;
+    }
+
+    .latency-badge.slow {
+      background: #f5dbce;
+      color: #913d2a;
+    }
+
+    .latency-badge.timeout {
+      background: #f0dcdc;
+      color: #aa3a2a;
+    }
+
+    .badge-gh, .badge-cnb {
+      padding: 0.05rem 0.6rem;
+      border-radius: 40px;
+      font-size: 0.55rem;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      color: white;
+    }
+    .badge-gh { background: #24292e; }
+    .badge-cnb { background: #1a7c5e; }
+
+    .spoiler-tag {
+      background: #dae6f0;
+      border-radius: 60px;
+      padding: 0.05rem 0.8rem;
+      font-size: 0.6rem;
+      color: #1f3f4e;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
+      white-space: nowrap;
+    }
+
+    .spoiler-tag .hint {
+      border-bottom: 1px dashed #3a6c84;
+      cursor: help;
+    }
+    .spoiler-tag .val {
+      background: #c1d7e6;
+      border-radius: 30px;
+      padding: 0 0.4rem;
+      font-weight: 500;
+      color: #0b2b3b;
+    }
+
+    .hr-soft {
+      margin: 1.4rem 0 0.8rem 0;
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, #cbdde9, transparent);
+    }
+
+    .footer-note {
+      font-size: 0.8rem;
+      color: #3b5b6b;
+      background: #e5f0f7;
+      padding: 0.4rem 1.4rem;
+      border-radius: 60px;
+      display: inline-block;
+      margin-top: 0.2rem;
+    }
+
+    details {
+      margin-top: 0.6rem;
+      background: #eaf2f9;
+      border-radius: 60px;
+      padding: 0.1rem 0.8rem 0.1rem 1.2rem;
+      border: 1px solid #d2e2ef;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: 500;
+      color: #184a5e;
+      padding: 0.4rem 0;
+      font-size: 0.85rem;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    details summary::-webkit-details-marker { display: none; }
+
+    .detail-content {
+      padding: 0.4rem 0.8rem 0.7rem 0.8rem;
+      font-size: 0.85rem;
+      background: #f0f7fd;
+      border-radius: 60px;
+      margin: 0.1rem 0 0.3rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.4rem;
+    }
+
+    @media (max-width: 680px) {
+      body { padding: 1rem 0.6rem; }
+      .container { padding: 1.5rem 1rem; }
+      .site-card { flex-direction: column; align-items: stretch; gap: 0.3rem; padding: 0.9rem 1.2rem; }
+      .right-meta { justify-content: flex-start; }
+      .site-left { width: 100%; }
+      .site-deploy { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header-flex">
+    <div>
+      <h1>
+        🛡️ 防失联 · 地址列表
+        <span class="badge-auto">自动测速</span>
+      </h1>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.2rem 0.4rem; margin-top: 0.2rem;">
+        <span class="subhead">主站 · 副站 · 备用</span>
+        <span style="font-size: 0.7rem; color: #346477; background: #dce8f2; padding: 0.05rem 1rem; border-radius: 60px;">📡 加载即测</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="desc">
+    ⚡ 任意站点可访问即不失联 · 延迟仅供参考
+  </div>
+
+  <!-- 站点列表 -->
+  <div class="site-grid" id="siteGrid">
+
+    <!-- 1. 主站 -->
+    <div class="site-card" data-domain="5xh.top">
+      <div class="site-left">
+        <span class="site-label"><span class="num">#1</span>主站</span>
+        <span class="site-domain"><a href="https://5xh.top/" target="_blank">5xh.top</a></span>
+        <span class="site-deploy"><i>⚡</i> Cloudflare</span>
+      </div>
+      <div class="right-meta">
+        <span class="latency-badge" id="lat-5xh.top">检测中…</span>
+      </div>
+    </div>
+
+    <!-- 2. 副站 (双域名) 使用更紧凑布局 -->
+    <div class="site-card" style="background: #f7faff; border-color: #c5dceb; flex-wrap: wrap;" data-domain="www.5xh.top">
+      <div style="display: flex; flex-direction: column; gap: 0.3rem; width: 100%;">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.8rem;">
+          <span class="site-label"><span class="num">#2</span>副站</span>
+          <span class="site-domain"><a href="https://www.5xh.top/" target="_blank">www.5xh.top</a></span>
+          <span class="site-deploy" style="background: #e7f0f9;"><i>📦</i> Edgeone · <span class="badge-gh">GitHub</span></span>
+          <span class="latency-badge" id="lat-www.5xh.top">检测中…</span>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.8rem;">
+          <span class="site-domain" style="margin-left: 2.6rem;"><a href="https://5xh.cc.cd/" target="_blank">5xh.cc.cd</a></span>
+          <span class="site-deploy" style="background: #e7f0f9;"><i>📦</i> Edgeone · <span class="badge-cnb">cnb</span></span>
+          <span class="latency-badge" id="lat-5xh.cc.cd">检测中…</span>
+          <span class="spoiler-tag"><span class="hint" title="托管详情">📎 托管</span> <span class="val">Github / cnb</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. 备用① -->
+    <div class="site-card" data-domain="bg.5xh.top">
+      <div class="site-left">
+        <span class="site-label"><span class="num">#3</span>备用①</span>
+        <span class="site-domain"><a href="https://bg.5xh.top/" target="_blank">bg.5xh.top</a></span>
+        <span class="site-deploy"><i>🌩️</i> 阿里云ESA</span>
+      </div>
+      <div class="right-meta">
+        <span class="latency-badge" id="lat-bg.5xh.top">检测中…</span>
+      </div>
+    </div>
+
+    <!-- 4. 备用② -->
+    <div class="site-card" data-domain="blog.5xh.top">
+      <div class="site-left">
+        <span class="site-label"><span class="num">#4</span>备用②</span>
+        <span class="site-domain"><a href="https://blog.5xh.top/" target="_blank">blog.5xh.top</a></span>
+        <span class="site-deploy"><i>▲</i> Vercel</span>
+      </div>
+      <div class="right-meta">
+        <span class="latency-badge" id="lat-blog.5xh.top">检测中…</span>
+      </div>
+    </div>
+
+    <!-- 5. 备用③ -->
+    <div class="site-card" data-domain="5xh.co.ink">
+      <div class="site-left">
+        <span class="site-label"><span class="num">#5</span>备用③</span>
+        <span class="site-domain"><a href="https://5xh.co.ink/" target="_blank">5xh.co.ink</a></span>
+        <span class="site-deploy"><i>🎩</i> 帽子云</span>
+      </div>
+      <div class="right-meta">
+        <span class="latency-badge" id="lat-5xh.co.ink">检测中…</span>
+      </div>
+    </div>
+
+    <!-- 6. 备用④ -->
+    <div class="site-card" data-domain="5xh.zh.kg">
+      <div class="site-left">
+        <span class="site-label"><span class="num">#6</span>备用④</span>
+        <span class="site-domain"><a href="https://5xh.zh.kg/" target="_blank">5xh.zh.kg</a></span>
+        <span class="site-deploy"><i>⚙️</i> Wasmer</span>
+      </div>
+      <div class="right-meta">
+        <span class="latency-badge" id="lat-5xh.zh.kg">检测中…</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="hr-soft">
+
+  <!-- 折叠细节（保留） -->
+  <details>
+    <summary><span style="background: #b6d0e0; border-radius: 30px; padding: 0 0.8rem; font-size: 0.7rem; color: #002a3b;">📋</span> 副站托管细节 · 点击展开 <span style="margin-left: auto; font-size: 0.7rem; color: #1b5870;">⏷</span></summary>
+    <div class="detail-content">
+      <span><span style="background: #3a6b80; color:white; padding:0.05rem 0.8rem; border-radius:40px; font-size:0.7rem;">www.5xh.top</span> 部署于 Edgeone · 托管于 GitHub</span>
+      <span><span style="background: #1a7c5e; color:white; padding:0.05rem 0.8rem; border-radius:40px; font-size:0.7rem;">5xh.cc.cd</span> 部署于 Edgeone · 托管于 cnb</span>
+      <span style="color:#28596e;"><span style="background:#bed6e7; padding:0.05rem 0.8rem; border-radius:40px;">🔄</span> 两站与主站内容同步</span>
+    </div>
+  </details>
+
+  <div style="display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: 0.8rem; margin-top: 1rem;">
+    <span class="footer-note">
+      <strong>✨</strong> 测速结果受网络影响，仅供参考
+    </span>
+    <span style="font-size:0.65rem; background:#dce8f2; padding:0.15rem 1rem; border-radius:60px; color:#12475f;">
+      🏷️ 自动检测 · 2026
+    </span>
+  </div>
+
+  <div style="margin-top: 1.2rem; font-size: 0.65rem; text-align: center; color: #487185; border-top: 1px solid #d3e2ed; padding-top: 0.8rem; letter-spacing: 0.2px;">
+    <span>📌 防失联 · 博客镜像站列表 · 加载后自动检测延迟</span>
+    <span style="display: inline-block; margin-left: 0.6rem; opacity: 0.6;">⚡</span>
+  </div>
+</div>
+
+<script>
+  (function() {
+    // ----- 测速核心 (返回延迟毫秒) -----
+    async function measureLatency(url) {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 8000);
+      const start = performance.now();
+      try {
+        await fetch(url, {
+          method: 'HEAD',
+          mode: 'no-cors',
+          cache: 'no-store',
+          signal: controller.signal
+        });
+        clearTimeout(timeoutId);
+        return Math.round(performance.now() - start);
+      } catch (_) {
+        clearTimeout(timeoutId);
+        return null;
+      }
+    }
+
+    // ----- 更新单个延迟显示 -----
+    function updateLatency(elId, latency) {
+      const el = document.getElementById(elId);
+      if (!el) return;
+      el.classList.remove('ok', 'mid', 'slow', 'timeout');
+      if (latency === null || latency === undefined) {
+        el.textContent = '⏱️ 超时';
+        el.classList.add('timeout');
+        return;
+      }
+      el.textContent = latency + ' ms';
+      if (latency < 200) el.classList.add('ok');
+      else if (latency < 600) el.classList.add('mid');
+      else el.classList.add('slow');
+    }
+
+    // ----- 测速单个站点 -----
+    async function testOne(url, id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.textContent = '…';
+        el.classList.remove('ok', 'mid', 'slow', 'timeout');
+      }
+      const latency = await measureLatency(url);
+      updateLatency(id, latency);
+    }
+
+    // ----- 自动测速所有 (并发控制) -----
+    async function autoTestAll() {
+      // 定义所有需要测速的站点: [ url, elementId ]
+      const sites = [
+        ['https://5xh.top/', 'lat-5xh.top'],
+        ['https://www.5xh.top/', 'lat-www.5xh.top'],
+        ['https://5xh.cc.cd/', 'lat-5xh.cc.cd'],
+        ['https://bg.5xh.top/', 'lat-bg.5xh.top'],
+        ['https://blog.5xh.top/', 'lat-blog.5xh.top'],
+        ['https://5xh.co.ink/', 'lat-5xh.co.ink'],
+        ['https://5xh.zh.kg/', 'lat-5xh.zh.kg']
+      ];
+
+      // 并发限制 4 个
+      const concurrency = 4;
+      for (let i = 0; i < sites.length; i += concurrency) {
+        const batch = sites.slice(i, i + concurrency);
+        await Promise.all(batch.map(([url, id]) => testOne(url, id)));
+        if (i + concurrency < sites.length) {
+          await new Promise(r => setTimeout(r, 250));
+        }
+      }
+    }
+
+    // ----- 页面加载完成后自动测速 -----
+    window.addEventListener('load', function() {
+      // 稍微延迟，让渲染完成
+      setTimeout(autoTestAll, 300);
+    });
+
+    console.log('🔁 自动测速已启动 (无按钮)');
+  })();
+</script>
+</body>
+</html>
