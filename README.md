@@ -8,7 +8,7 @@
 ├── ghd/          # gh 多线路下载加速
 ├── ssl/           # ssl 申请证书页面
 ├── yx/           # ai写的单机小游戏
-├── fsl           # 防失联网站
+├── fsl/           # 防失联网站
 ├── README.md
 └── index.html
 
