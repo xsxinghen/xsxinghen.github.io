@@ -307,6 +307,35 @@
       gap: 0.4rem 1.4rem;
     }
 
+    /* 副站内联布局 - 每个子项与主站对齐 */
+    .sub-site-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 0.3rem 0.8rem;
+    }
+
+    .sub-site-left {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.3rem 0.7rem;
+      flex: 1 1 50%;
+    }
+
+    .sub-site-right {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.3rem 0.8rem;
+    }
+
+    .sub-indent {
+      margin-left: 2.6rem;
+    }
+
     @media (max-width: 680px) {
       body { padding: 1rem 0.6rem; }
       .container { padding: 1.5rem 1rem; }
@@ -314,6 +343,9 @@
       .right-meta { justify-content: flex-start; }
       .site-left { width: 100%; }
       .site-deploy { white-space: normal; }
+      .sub-indent { margin-left: 0; }
+      .sub-site-item { flex-direction: column; align-items: stretch; }
+      .sub-site-right { justify-content: flex-start; }
     }
   </style>
 </head>
@@ -352,24 +384,34 @@
       </div>
     </div>
 
-    <!-- 2. 副站 (双域名) 使用更紧凑布局 -->
+    <!-- 2. 副站 (双域名) 每个子项与主站对齐 -->
     <div class="site-card" style="background: #f7faff; border-color: #c5dceb; flex-wrap: wrap;" data-domain="www.5xh.top">
-      <div style="display: flex; flex-direction: column; gap: 0.3rem; width: 100%;">
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.8rem;">
-          <span class="site-label"><span class="num">#2</span>副站</span>
-          <span class="site-domain"><a href="https://www.5xh.top/" target="_blank">www.5xh.top</a></span>
-          <span class="site-deploy" style="background: #e7f0f9;"><i>📦</i> Edgeone · <span class="badge-gh">GitHub</span></span>
+      <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+
+        <!-- 副站 第一个域名: www.5xh.top -->
+        <div class="sub-site-item">
+          <div class="sub-site-left">
+            <span class="site-label"><span class="num">#2</span>副站</span>
+            <span class="site-domain"><a href="https://www.5xh.top/" target="_blank">www.5xh.top</a></span>
+            <span class="site-deploy" style="background: #e7f0f9;"><i>📦</i> Edgeone · <span class="badge-gh">GitHub</span></span>
+          </div>
+          <div class="sub-site-right">
+            <span class="latency-badge" id="lat-www.5xh.top">检测中…</span>
+          </div>
         </div>
-        <div class="right-meta">
-         <span class="latency-badge" id="lat-www.5xh.top">检测中…</span>
+
+        <!-- 副站 第二个域名: 5xh.cc.cd (缩进对齐) -->
+        <div class="sub-site-item">
+          <div class="sub-site-left sub-indent">
+            <span class="site-domain"><a href="https://5xh.cc.cd/" target="_blank">5xh.cc.cd</a></span>
+            <span class="site-deploy" style="background: #e7f0f9;"><i>📦</i> Edgeone · <span class="badge-cnb">cnb</span></span>
+            <span class="spoiler-tag"><span class="hint" title="托管详情">📎 托管</span> <span class="val">Github / cnb</span></span>
+          </div>
+          <div class="sub-site-right">
+            <span class="latency-badge" id="lat-5xh.cc.cd">检测中…</span>
+          </div>
         </div>
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.8rem;">
-          <span class="site-domain" style="margin-left: 2.6rem;"><a href="https://5xh.cc.cd/" target="_blank">5xh.cc.cd</a></span>
-          <span class="site-deploy" style="background: #e7f0f9;"><i>📦</i> Edgeone · <span class="badge-cnb">cnb</span></span>
-        </div>
-        <div class="right-meta">
-          <span class="latency-badge" id="lat-5xh.cc.cd">检测中…</span>
-        </div>
+
       </div>
     </div>
 
